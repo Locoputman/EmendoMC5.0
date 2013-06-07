@@ -13,6 +13,9 @@
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([EMCAppDelegate class]));
+        openlog("EmendoMC", LOG_CONS | LOG_PID | LOG_NDELAY, LOG_LOCAL1);
+        int retVal = UIApplicationMain(argc, argv, nil, NSStringFromClass([EMCAppDelegate class]));
+        closelog();
+        return retVal;
     }
 }

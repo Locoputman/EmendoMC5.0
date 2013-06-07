@@ -1,5 +1,5 @@
 //
-//  EMCAppDelegate.h
+//  EMCWorldSelectViewController.h
 //  EmendoMC
 //
 //  Created by Silas Schwarz on 6/2/13.
@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import "EMCWorldCell.h"
 #import "EMCSharedData.h"
-#import "EMCWorldSelectViewController.h"
 
-@interface EMCAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface EMCWorldSelectViewController : UICollectionViewController
 
 @end
